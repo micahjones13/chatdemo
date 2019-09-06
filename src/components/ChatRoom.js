@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import firebase from 'firebase';
 
 export default class ChatRoom extends Component {
 
@@ -30,7 +31,7 @@ handleSubmit = () => {
         text: this.state.message
     }
 
-    firebase.database().ref('messages/')+nextMessage.id).set(nextMessage)
+    // firebase.database().ref('messages/')+nextMessage.id.set(nextMessage)
     // let list = Object.assign([], this.state.messages);
     // list.push(nextMessage)
     // this.setState({
